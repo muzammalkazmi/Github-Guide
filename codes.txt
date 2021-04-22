@@ -1,0 +1,30 @@
+// login commands
+------------------
+---> git config --global user.email 'muzammalkazmi@gmail.com'
+--->git config --global user.name 'muzammal kazmi'
+// adding file in staging area 
+// first check whick files are in staging area and which are not
+---> git status
+// now add
+---> git add index.html // to add file on-by-one
+---> git add -A // to add all files
+---> git commit -m "added new form for purchases"  //command for commiting or snapshot
+
+-----------------------------------------------------------------------------------------------------
+Branching and merging
+----------------------
+--->git branch  // shows list of branches
+--->git branch -v  //shows list of branches with some detail
+--->git branch new-dev  // creates new branch with name new-dev
+--->git checkout new-dev  //switches to new-dev branch
+--->git log master..new-dev  //how much master branch is different from new-dev
+--->git merge new-dev  //merges all commits of new-dev to master
+------------------------------------------------------------------------------------------------------
+Stashes
+--------
+--->git stash  //save local changes in stash clip-board
+--->git stash save filename  //save stash with file name
+--->git stash list  //show list of stashes
+--->git stash pop  //apply last stash and removes from stash list
+--->git stash apply stashname  //apply particular stash and stash remain in list
+--->git stash clear  //removes all stashes 
